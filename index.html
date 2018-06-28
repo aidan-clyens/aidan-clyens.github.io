@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Aidan Clyens</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h1>Aidan Clyens</h1>
+  </div>
+
+  <!-- Nav Bar -->
+  <div class="navbar" id="navbar">
+    <div class="navbar-item">
+      <button class="tablink" onclick="tabClick(event, 'home')">Home</button>
+    </div>
+    <div class="navbar-item">
+      <button class="tablink" onclick="tabClick(event, 'projects')">Projects</button>
+    </div>
+    <div class="navbar-item">
+      <button class="tablink" onclick="tabClick(event, 'work')">Work</button>
+    </div>
+    <div class="clock" id="clock"></div>
+  </div>
+
+  <!-- Home Content -->
+  <div class="content" id="home">
+    <!-- Personal Info -->
+    <h1>Aidan Clyens</h1>
+    <h2>University of Waterloo</h2>
+    <h2>Computer Engineering Class of 2021</h2>
+    <!-- Skills Table -->
+    <div>
+      <div class="row">
+        <div class="column">
+          Col 1
+        </div>
+        <div class="column">
+          Col 2
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Content -->
+  <div class="content" id="projects">
+    <div class="project-row">
+      <!-- Project 1 -->
+      <div class="project-column">
+        <div class="project-box">
+          <div>
+            <img src="images/arduino-logo.png">
+          </div>
+          <div class="project-caption">
+            <a href="https://github.com/aidanclyens88/Arduino_Data_Structures" target="_blank">Arduino Data Structures</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-column">
+        <div class="project-box">
+          <div>
+            <img src="images/pong.png">
+          </div>
+          <div class="project-caption">
+            <a href="https://github.com/aidanclyens88/Pong_Game" target="_blank">Android Pong Game</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-column">
+        <div class="project-box">
+          <div>
+            <img src="images/html-logo.png">
+          </div>
+          <div class="project-caption">
+            <a href="" target="_blank">Personal Web Page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project-row">
+      <!-- Project 4 -->
+      <div class="project-column">
+        <div class="project-box">
+          <div>
+            <img src="images/breakout.png">
+          </div>
+          <div class="project-caption">
+            <a href="https://github.com/aidanclyens88/Breakout" target="_blank">Breakout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Work Content -->
+  <div class="content" id="work">
+    <!-- Job 1 -->
+    <div class="work-box">
+      <h1>University of Waterloo Engineering Computing</h1>
+      <h2>Engineering PC Network Hardware/Software Assistant</h2>
+      <h3>Sep. 2018 - Dec. 2018, May 2018 - Aug. 2018</h3>
+      <!-- Project Gallery -->
+      <div class="gallery">
+        <!-- Slide 1 -->
+        <div class="slide" style="display:block">
+          <img src="images/slide1.png">
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide">
+          <img src="images/slide2.png">
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide">
+          <img src="images/slide3.png">
+        </div>
+        <!-- Row -->
+        <div class="slide-row">
+          <div class="column">
+            <img class="thumbnail" src="images/slide1-small.png" onclick="setSlideIndex(0)">
+          </div>
+          <div class="column">
+            <img class="thumbnail" src="images/slide2-small.png" onclick="setSlideIndex(1)">
+          </div>
+          <div class="column">
+            <img class="thumbnail" src="images/slide3-small.png" onclick="setSlideIndex(2)">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Job 2 -->
+    <div class="work-box">
+      <h1>DataKinetics Ltd.</h1>
+      <h2>Product Owner</h2>
+      <h3>Jan. 2017 - Apr. 2017</h3>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    Aidan Clyens 2018
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts/app.js"></script>
+</body>
+</html>
