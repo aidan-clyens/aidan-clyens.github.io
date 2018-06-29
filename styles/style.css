@@ -111,6 +111,29 @@ img {
   }
 }
 
+/* Home */
+.home-header {
+  margin-bottom: 200px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+  .row {
+    display: table;
+    width: 100%;
+  }
+
+  .column {
+    float: left;
+    width: calc(100% / 3);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home-header {
+    margin-bottom: 75px;
+  }
+}
+
 /* Projects */
 .project-box {
   margin: 60px;
@@ -158,19 +181,14 @@ img {
   width: 50%;
 }
 
-.row {
-  display: table;
-  width: 100%;
-}
-
-.column {
-  float: left;
-  width: calc(100% / 3);
-}
-
 .slide-row {
   display: table;
   width: 50%;
+}
+
+.slide-column {
+  float: left;
+  width: calc(100% / 3);
 }
 
 .thumbnail {
