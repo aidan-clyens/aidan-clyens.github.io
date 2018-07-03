@@ -1,0 +1,15 @@
+/* Fonts */
+@font-face {
+  font-family: ubuntu;
+  src: url('./../fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+  font-family: gravity;
+  src: url('./../fonts/Gravity-Regular.otf');
+}
+
+@font-face {
+  font-family: digital;
+  src: url('./../fonts/digital-7.ttf');
+}
