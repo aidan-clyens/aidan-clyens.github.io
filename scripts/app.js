@@ -1,10 +1,6 @@
 let slideIndex = 0;
 let timer = setInterval(showSlide, 10000);
 
-window.onload = function() {
-  startClock();
-};
-
 //  When a tab in the navbar is clicked, switch the content page
 function tabClick(event, tab) {
   var i;
@@ -31,29 +27,6 @@ function accordionClick(event, name) {
 
   let visible =info.style.display === "block";
   info.style.display = (visible) ? "none" : "block";
-}
-
-//  Display a clock on the navbar
-function startClock() {
-  let today = new Date();
-  let hour = today.getHours();
-  let minute = today.getMinutes();
-
-  var abrev;
-
-  if (hour > 12) {
-    hour -= 12;
-    abrev = "PM";
-  } else {
-    abrev = "AM";
-  }
-
-  if (minute < 10) { minute = "0" + minute; }
-
-  document.getElementById('clock').innerHTML = hour + ":" + minute + " " + abrev;
-
-  //  Update clock every 500 millisecondss
-  let clockTimer = setTimeout(startClock, 500);
 }
 
 //  Switch slides in the slide show in the 'Work' section

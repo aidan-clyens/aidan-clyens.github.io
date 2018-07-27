@@ -77,24 +77,12 @@ a:hover {
   padding: 15px;
 }
 
-.clock {
-  float: right;
-  padding: 15px;
-  font-family: digital;
-  font-size: 250%;
-}
-
 @media only screen and (max-width: 500px) {
   .navbar-item {
     float: left;
     padding: 0px;
     padding-top: 5px;
     font-size: 70%;
-  }
-
-  .clock {
-    float: right;
-    font-size: 130%;
   }
 }
 
@@ -105,10 +93,6 @@ a:hover {
     font-size: 75%;
     width: calc(100% / 4);
   }
-
-  .clock {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 411px) and (max-width: 700px) {
@@ -116,10 +100,6 @@ a:hover {
     padding: 0;
     padding-top: 5px;
     width: calc(100% / 4);
-  }
-
-  .clock {
-    display: none;
   }
 }
 
@@ -180,6 +160,7 @@ a:hover {
 .project-box {
   border: 5px solid #245aab;
   border-radius: 5px;
+  cursor: pointer;
   transition: box-shadow .2s linear;
 }
 
@@ -286,7 +267,6 @@ a:hover {
 
 /* Footer */
 .footer {
-  position: fixed;
   background-color: white;
   bottom: 0;
   left: 0;
