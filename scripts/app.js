@@ -23,6 +23,16 @@ function tabClick(event, tab) {
   event.currentTarget.className += " active";
 }
 
+// Click a button for more info in the Projects page
+function accordionClick(event, name) {
+  let info = document.getElementById(name);
+
+  event.currentTarget.classList.toggle("active");
+
+  let visible =info.style.display === "block";
+  info.style.display = (visible) ? "none" : "block";
+}
+
 //  Display a clock on the navbar
 function startClock() {
   let today = new Date();

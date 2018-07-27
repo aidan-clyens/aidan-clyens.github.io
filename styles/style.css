@@ -107,8 +107,7 @@ a:hover {
   }
 
   .clock {
-    float: left;
-    font-size: 150%;
+    display: none;
   }
 }
 
@@ -120,8 +119,7 @@ a:hover {
   }
 
   .clock {
-    float: left;
-    font-size: 200%;
+    display: none;
   }
 }
 
@@ -192,8 +190,15 @@ a:hover {
 
 .project-caption {
   background-color: #2c63b5;
+  cursor: pointer;
   padding: 20px;
-  font-size: 125%;
+}
+
+.project-info {
+  display: none;
+  overflow: hidden;
+  padding: 10px;
+  font-size: 100%;
 }
 
 @media only screen and (min-width: 500px) {
