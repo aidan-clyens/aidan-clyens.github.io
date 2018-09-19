@@ -134,7 +134,7 @@ a:hover {
 
 /* Home */
 .home-header {
-  margin-bottom: 125px;
+  margin-bottom: 75px;
   text-align: center;
 }
 
@@ -220,6 +220,7 @@ a:hover {
 /* Work */
 .work-box {
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .slide {
